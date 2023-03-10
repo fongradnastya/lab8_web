@@ -46,3 +46,16 @@ let block4 = new Block({
     color: 'black', 
     radius: 2
 });
+
+// Создание конструктора
+
+
+// Расширение встроенного типа данных
+Array.prototype.max = function() {
+    console.log(this)
+	return Math.max.apply(null, this)
+}
+
+let testArr = [10, 3, -1, 6, 100, 0, 5, 4, -100 -7, 8, 9]
+let testMax = testArr.max();
+console.log(`Max value: ${testMax}`);
